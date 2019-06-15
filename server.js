@@ -6,6 +6,8 @@ const saltRounds = 10;
 const cors = require('cors');
 
 const app = express();
+app.use(bodyParser.json());
+app.use(cors());
 
 let database = {
     users: [{
@@ -32,8 +34,7 @@ let database = {
     }]
 };
 
-app.use(bodyParser.json());
-app.use(cors());
+
 
 app.get('/', (req, res) => {
     res.send(database.users);
@@ -50,7 +51,15 @@ app.post('/login', (req, res) => {
     });*/
 
     if (database.users[0].email === email && database.users[0].password === password) {
-        res.json(database.users[0]);
+        const {id, name, email, entries, joined} = database.users[0];
+
+        res.json({
+            id: id,
+            name: name,
+            email: email,
+            entries: entries,
+            joined: joined
+        });
     } else {
         res.status(404).json('Incorrect email + password combination');
     }
