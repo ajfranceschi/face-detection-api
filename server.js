@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const uuidv4 = require('uuid/v4');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
+const cors = require('cors');
 
 const app = express();
 
@@ -32,6 +33,7 @@ let database = {
 };
 
 app.use(bodyParser.json());
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send(database.users);
@@ -74,13 +76,48 @@ app.post('/register', (req, res) => {
     res.send(user);
 });
 
+app.get('/profile/:id', (req, res) => {
+    const { id } = req.params;
+    let found = false;
+
+    database.users.forEach(user => {
+        if (user.id === id) {
+            found = true;
+            return res.json(user);
+        }
+    });
+
+    if (!found) {
+        return res.status(404).json('could not find user');
+    }
+
+});
+
+app.put('/image', (req, res) => {
+    const {id} = req.body;
+    let found = false;
+
+    database.users.forEach(user => {
+        if (user.id === id) {
+            found = true;
+            user.entries++;
+            return res.json(user.entries);
+        }
+    });
+
+    if (!found) {
+        res.status(404).json('Could not find user with ID Provided');
+    }
+
+
+});
+
 app.listen(3000, () => {
     console.log('Listening on port 3000');
 });
 
 // API DESIGN:
-// 1: Login
-// 2: Register
-// 3: RANK
-// 4: Profile
-// 5: Image
+// 1: Login ->X
+// 2: Register - POST => register user to DB and return registered user - X
+// 4: Profile -> get => return user profile for the provided id - X
+// 5: Image => PUT increase entries for the provided user - X
