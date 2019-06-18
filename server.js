@@ -4,35 +4,48 @@ const uuidv4 = require('uuid/v4');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const cors = require('cors');
+const knex = require('knex');
+
+const database = knex({
+    client: 'pg',
+    connection: {
+        host: '127.0.0.1',
+        user: 'afrances',
+        password: '',
+        database: 'smart-brain'
+    }
+});
+
+database.select("*").from('users').then(data => console.log(data));
 
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-let database = {
-    users: [{
-        id: '123',
-        name: 'John',
-        email: 'john@gmail.com',
-        password: 'cookies',
-        entries: 0,
-        joined: new Date()
-    }, {
-        id: '124',
-        name: 'Sally',
-        email: 'sally@gmail.com',
-        password: 'bananas',
-        entries: 0,
-        joined: new Date()
-    }, {
-        id: '125',
-        name: 'Antonio',
-        email: 'antonio@me.com',
-        password: 'pelota',
-        entries: 0,
-        joined: new Date()
-    }]
-};
+// let database = {
+//     users: [{
+//         id: '123',
+//         name: 'John',
+//         email: 'john@gmail.com',
+//         password: 'cookies',
+//         entries: 0,
+//         joined: new Date()
+//     }, {
+//         id: '124',
+//         name: 'Sally',
+//         email: 'sally@gmail.com',
+//         password: 'bananas',
+//         entries: 0,
+//         joined: new Date()
+//     }, {
+//         id: '125',
+//         name: 'Antonio',
+//         email: 'antonio@me.com',
+//         password: 'pelota',
+//         entries: 0,
+//         joined: new Date()
+//     }]
+// };
 
 
 app.get('/', (req, res) => {
@@ -65,23 +78,35 @@ app.post('/login', (req, res) => {
 });
 
 app.post('/register', (req, res) => {
-    database.users.push({
-        id: uuidv4(),
-        name: req.body.name,
-        email: req.body.email,
-        password: req.body.password,
-        entries: 0,
-        joined: new Date()
-    });
-    const registeredUser = database.users[database.users.length-1];
-    const user = {
-        id: registeredUser.id,
-        name: registeredUser.name,
-        email: registeredUser.email,
-        entries: registeredUser.entries,
-        joined: registeredUser.joined
-    };
-    res.send(user);
+    const {name, email, password} = req.body;
+
+    database('users')
+        .returning('*')
+        .insert({
+            name: name,
+            email: email,
+            joined: new Date()
+        })
+        .then(user => res.json(user))
+        .catch(error => res.status(400).json(error));
+
+    // database.users.push({
+    //     id: uuidv4(),
+    //     name: req.body.name,
+    //     email: req.body.email,
+    //     password: req.body.password,
+    //     entries: 0,
+    //     joined: new Date()
+    // });
+    // const registeredUser = database.users[database.users.length-1];
+    // const user = {
+    //     id: registeredUser.id,
+    //     name: registeredUser.name,
+    //     email: registeredUser.email,
+    //     entries: registeredUser.entries,
+    //     joined: registeredUser.joined
+    // };
+    // res.send(user);
 });
 
 app.get('/profile/:id', (req, res) => {
