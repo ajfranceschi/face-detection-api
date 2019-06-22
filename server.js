@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const uuidv4 = require('uuid/v4');
 const bcrypt = require('bcrypt');
-const saltRounds = 10;
 const cors = require('cors');
 const knex = require('knex');
 
@@ -16,7 +15,7 @@ const database = knex({
     }
 });
 
-database.select("*").from('users').then(data => console.log(data));
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -49,12 +48,14 @@ app.use(cors());
 
 
 app.get('/', (req, res) => {
-    res.send(database.users);
+    return database.select("*")
+        .from('users')
+        .then(data => res.json(data));
 });
 
 app.post('/login', (req, res) => {
     const email = req.body.email;
-    let password = req.body.password;
+    const password = req.body.password;
 
     /*bcrypt.hash(password, saltRounds, (err, hash) => {
         bcrypt.compare(password, hash, (err, res) => {
@@ -80,15 +81,32 @@ app.post('/login', (req, res) => {
 app.post('/register', (req, res) => {
     const {name, email, password} = req.body;
 
-    database('users')
-        .returning('*')
-        .insert({
-            name: name,
-            email: email,
-            joined: new Date()
-        })
-        .then(user => res.json(user))
-        .catch(error => res.status(400).json(error));
+    // convert password to hash
+    const salt = bcrypt.genSaltSync(10);
+    const hash = bcrypt.hashSync(password, salt);
+    const hashEmail = bcrypt.hashSync(email, salt);
+
+    // insert into login and users using transaction
+    database.transaction(trx => {
+        trx('login')
+            .insert({
+                email: hashEmail,
+                hash: hash
+            })
+            .returning('email')
+            .then(loginEmail => {
+                return trx('users')
+                    .returning('*')
+                    .insert({
+                        name: name,
+                        email: loginEmail[0],
+                        joined: new Date()
+                    })
+                    .then(user => res.json(user[0]))
+            })
+            .then(trx.commit)
+            .catch(trx.rollback);
+    }).catch(error => res.status(400).json('Error registering user'));
 
     // database.users.push({
     //     id: uuidv4(),
