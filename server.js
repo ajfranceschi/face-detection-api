@@ -4,6 +4,7 @@ const uuidv4 = require('uuid/v4');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
 const knex = require('knex');
+const saltRounds = 10;
 
 const database = knex({
     client: 'pg',
@@ -53,44 +54,40 @@ app.get('/', (req, res) => {
         .then(data => res.json(data));
 });
 
+// PRAGMA MARK: -Login
+
 app.post('/login', (req, res) => {
-    const email = req.body.email;
-    const password = req.body.password;
-
-    /*bcrypt.hash(password, saltRounds, (err, hash) => {
-        bcrypt.compare(password, hash, (err, res) => {
-            console.log(res);
-        });
-    });*/
-
-    if (database.users[0].email === email && database.users[0].password === password) {
-        const {id, name, email, entries, joined} = database.users[0];
-
-        res.json({
-            id: id,
-            name: name,
-            email: email,
-            entries: entries,
-            joined: joined
-        });
-    } else {
-        res.status(404).json('Incorrect email + password combination');
-    }
+    database('login')
+        .select('email', 'hash')
+        .where('email', req.body.email)
+        .then(loginUser => {
+            if (bcrypt.compareSync(req.body.password,loginUser[0].hash)) {
+                return database('users')
+                    .select('*')
+                    .where('email', loginUser[0].email)
+                    .then(user => res.json(user[0]))
+                    .catch(error => res.json("error logging in"))
+            } else {
+                res.status(400).json('Incorrect credentials');
+            }
+        })
+        .catch(error => res.json('Incorrect credentials'));
 });
+
+// ####### REGISTER ##########
 
 app.post('/register', (req, res) => {
     const {name, email, password} = req.body;
 
     // convert password to hash
-    const salt = bcrypt.genSaltSync(10);
+    const salt = bcrypt.genSaltSync(saltRounds);
     const hash = bcrypt.hashSync(password, salt);
-    const hashEmail = bcrypt.hashSync(email, salt);
 
     // insert into login and users using transaction
     database.transaction(trx => {
         trx('login')
             .insert({
-                email: hashEmail,
+                email: email,
                 hash: hash
             })
             .returning('email')
