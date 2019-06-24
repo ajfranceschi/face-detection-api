@@ -16,8 +16,6 @@ const database = knex({
     }
 });
 
-
-
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
@@ -47,15 +45,14 @@ app.use(cors());
 //     }]
 // };
 
-
+// ####### ROOT ##########
 app.get('/', (req, res) => {
     return database.select("*")
         .from('users')
         .then(data => res.json(data));
 });
 
-// PRAGMA MARK: -Login
-
+// ####### LOGIN ##########
 app.post('/login', (req, res) => {
     database('login')
         .select('email', 'hash')
@@ -75,7 +72,6 @@ app.post('/login', (req, res) => {
 });
 
 // ####### REGISTER ##########
-
 app.post('/register', (req, res) => {
     const {name, email, password} = req.body;
 
@@ -124,27 +120,30 @@ app.post('/register', (req, res) => {
     // res.send(user);
 });
 
+// ####### PROFILE ##########
 app.get('/profile/:id', (req, res) => {
     const { id } = req.params;
-    let found = false;
 
-    database.users.forEach(user => {
-        if (user.id === id) {
-            found = true;
-            return res.json(user);
-        }
-    });
+    return database('users')
+        .select('*')
+        .where('id', id)
+        .then(user => {
+            if (user.length > 0) {
+                res.json(user[0]);
+            } else {
+                res.status(400).json('Could not find user.')
+            }
 
-    if (!found) {
-        return res.status(404).json('could not find user');
-    }
-
+        })
+        .catch(error => res.status(404).json('could not find user'));
 });
 
+// ####### IMAGE: INCREMENT ENTRIES ##########
 app.put('/image', (req, res) => {
     const {id} = req.body;
     let found = false;
 
+    database('users').
     database.users.forEach(user => {
         if (user.id === id) {
             found = true;
