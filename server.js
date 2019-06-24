@@ -141,22 +141,19 @@ app.get('/profile/:id', (req, res) => {
 // ####### IMAGE: INCREMENT ENTRIES ##########
 app.put('/image', (req, res) => {
     const {id} = req.body;
-    let found = false;
 
-    database('users').
-    database.users.forEach(user => {
-        if (user.id === id) {
-            found = true;
-            user.entries++;
-            return res.json(user.entries);
-        }
-    });
-
-    if (!found) {
-        res.status(404).json('Could not find user with ID Provided');
-    }
-
-
+    return database('users')
+        .where('id', '=', id)
+        .returning('entries')
+        .increment('entries', 1)
+        .then(entries => {
+            if (entries.length > 0) {
+                res.json(entries[0]);
+            } else {
+                res.status(400).json("couldn't find user");
+            }
+        })
+        .catch(error => res.status(400).json('could not find user'));
 });
 
 app.listen(3000, () => {
