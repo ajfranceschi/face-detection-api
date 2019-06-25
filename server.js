@@ -51,6 +51,11 @@ app.put('/image', (req, res) => {
     image.handleImage(req, res, database);
 });
 
+// ####### IMAGE: CLARIFAI API CALL ##########
+app.post('/imageurl', (req, res) => {
+    image.handleApiCall(req, res);
+});
+
 app.listen(3000, () => {
     console.log('Listening on port 3000');
 });
