@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9530770c-a586-4336-ac64-b23c9644fc04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,20 +15,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            <state relative-caret-position="277">
+              <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
               <folding>
                 <element signature="e#479#498#0" />
                 <element signature="e#1119#1216#0" />
+                <element signature="e#3495#3877#0" />
+                <element signature="e#3960#4392#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/image.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
@@ -77,8 +78,8 @@
         <option value="$PROJECT_DIR$/controllers/register.js" />
         <option value="$PROJECT_DIR$/controllers/login.js" />
         <option value="$PROJECT_DIR$/controllers/profile.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/controllers/image.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -173,18 +174,18 @@
       <workItem from="1561233618918" duration="3639000" />
       <workItem from="1561350951554" duration="361000" />
       <workItem from="1561401481543" duration="2000" />
-      <workItem from="1561401518148" duration="3714000" />
+      <workItem from="1561401518148" duration="3781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26688000" />
+    <option name="totallyTimeSpent" value="26755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="960" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4947644" visible="true" weight="0.25346112" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4947644" visible="true" weight="0.25346112" />
       <window_info id="Structure" order="1" sideWeight="0.5052356" side_tool="true" weight="0.24920128" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -198,7 +199,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Quokka" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.26679462" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.26679462" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -237,21 +238,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="e#479#498#0" />
-            <element signature="e#1119#1216#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/image.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+          <folding>
+            <element signature="e#479#498#0" />
+            <element signature="e#1119#1216#0" />
+            <element signature="e#3495#3877#0" />
+            <element signature="e#3960#4392#0" />
+          </folding>
         </state>
       </provider>
     </entry>

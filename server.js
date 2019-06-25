@@ -62,7 +62,9 @@ app.post('/login', (req, res) => {
 });
 
 // ####### REGISTER ##########
-app.post('/register', (req, res) => {register.handleRegister(req, res, database, bcrypt)});
+app.post('/register', (req, res) => {
+    register.handleRegister(req, res, database, bcrypt)
+});
 
 // ####### PROFILE ##########
 app.get('/profile/:id', (req, res) => {
