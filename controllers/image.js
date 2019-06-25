@@ -14,7 +14,6 @@ const handleApiCall = (req, res) => {
 const handleImage = (req, res, database) => {
     const {id} = req.body;
 
-
     return database('users')
         .where('id', '=', id)
         .returning('entries')

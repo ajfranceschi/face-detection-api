@@ -2,6 +2,231 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9530770c-a586-4336-ac64-b23c9644fc04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/node_modules/asap/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asap/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asap/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asap/asap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asap/browser-asap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asap/browser-raw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/asap/raw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/async/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/async/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/async/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/async/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/async/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/async/lib/async.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/async/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/async/support/sync-package-managers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/UPGRADE_GUIDE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/axios.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/http_proxy.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/InterceptorManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/core/dispatchRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/defaults.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/bind.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/btoa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/buildURL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/combineURLs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/cookies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/deprecatedMethod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isAbsoluteURL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isURLSameOrigin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/parseHeaders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/settle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/spread.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/helpers/transformData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/axios/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/Concept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/Concepts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/Input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/Inputs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/Model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/ModelVersion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/Models.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/Region.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/Regions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/Workflow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/Workflows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/solutions/Moderation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/solutions/Solutions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/dist/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/examples/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/examples/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/api-key-spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/archive/orig-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/concepts-spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/delete-spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/inputs-search-spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/models-spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/options-spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/session-token-spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/test-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/spec/workflows-spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/Concept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/Concepts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/Input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/Inputs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/Model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/ModelVersion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/Models.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/Region.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/Regions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/Workflow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/Workflows.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/solutions/Moderation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/solutions/Solutions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/src/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/clarifai/token.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/License" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/lib/combined_stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/combined-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/License" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/lib/delayed_stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/test/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/test/integration/test-delayed-http-upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/test/integration/test-delayed-stream-auto-pause.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/test/integration/test-delayed-stream-pause.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/test/integration/test-delayed-stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/test/integration/test-handle-source-errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/test/integration/test-max-data-size.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/test/integration/test-pipe-resumes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/test/integration/test-proxy-readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/delayed-stream/test/run.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/https.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/.coveralls.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/src/browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/src/debug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/src/inspector-log.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/debug/src/node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/ms/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/ms/license.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/ms/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/node_modules/ms/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/follow-redirects/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/License" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/lib/form_data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-db/HISTORY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-db/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-db/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-db/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-db/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-db/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-types/HISTORY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-types/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-types/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-types/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/node_modules/mime-types/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/form-data/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/domains/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/domains/done.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/domains/es6-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/domains/finally.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/domains/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/domains/node-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/domains/rejection-tracking.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/domains/synchronous.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/lib/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/lib/done.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/lib/es6-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/lib/finally.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/lib/node-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/lib/rejection-tracking.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/lib/synchronous.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/polyfill-done.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/polyfill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/done.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/es6-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/finally.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/node-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/rejection-tracking.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/synchronous.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/src/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/src/done.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/src/es6-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/src/finally.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/src/node-extensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/src/rejection-tracking.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/promise/src/synchronous.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/stream-consume/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/stream-consume/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/stream-consume/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/test/is_http_uri.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/test/is_https_uri.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/test/is_uri.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/valid-url/test/is_web_uri.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/image.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/image.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login.js" afterDir="false" />
@@ -24,7 +249,7 @@
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-576">
-              <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding>
                 <element signature="e#1867#1913#0" />
               </folding>
@@ -45,16 +270,25 @@
         <entry file="file://$PROJECT_DIR$/controllers/login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/image.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/image.js">
+        <entry file="file://$PROJECT_DIR$/node_modules/clarifai/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+            <state relative-caret-position="232">
+              <caret line="33" column="19" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -104,6 +338,17 @@
               <item name="face-detection-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="face-detection-api" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="face-detection-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="face-detection-api" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="face-detection-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="face-detection-api" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="clarifai" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,7 +417,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29457000" />
+    <option name="totallyTimeSpent" value="29818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="960" height="1177" extended-state="0" />
@@ -227,7 +472,7 @@
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-576">
-          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding>
             <element signature="e#1867#1913#0" />
           </folding>
@@ -237,14 +482,21 @@
     <entry file="file://$PROJECT_DIR$/controllers/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/image.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        <state relative-caret-position="273">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/clarifai/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="19" />
         </state>
       </provider>
     </entry>
