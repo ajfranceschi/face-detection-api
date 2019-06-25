@@ -28,6 +28,7 @@ app.use(cors());
 app.get('/', (req, res) => {
     return database.select("*")
         .from('users')
+        .orderBy('id', 'asc')
         .then(data => res.json(data));
 });
 
