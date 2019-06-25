@@ -18,16 +18,50 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="155" column="69" selection-start-line="155" selection-start-column="69" selection-end-line="155" selection-end-column="69" />
+            <state relative-caret-position="277">
+              <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
               <folding>
-                <element signature="e#254#406#0" />
                 <element signature="e#479#498#0" />
                 <element signature="e#1119#1216#0" />
-                <element signature="e#1281#1901#0" />
-                <element signature="e#1972#3423#0" />
-                <element signature="e#3495#3785#0" />
+                <element signature="e#3495#3877#0" />
+                <element signature="e#3960#4392#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/image.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -41,6 +75,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/controllers/register.js" />
+        <option value="$PROJECT_DIR$/controllers/login.js" />
+        <option value="$PROJECT_DIR$/controllers/profile.js" />
+        <option value="$PROJECT_DIR$/controllers/image.js" />
         <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
@@ -62,18 +100,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="smart-brain-api-myself" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smart-brain-api-myself" type="462c0819:PsiDirectoryNode" />
+              <item name="face-detection-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="face-detection-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="face-detection-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="face-detection-api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -84,7 +127,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -129,19 +172,23 @@
       <workItem from="1560889525972" duration="90000" />
       <workItem from="1561179031961" duration="4276000" />
       <workItem from="1561233618918" duration="3639000" />
+      <workItem from="1561350951554" duration="361000" />
+      <workItem from="1561401481543" duration="2000" />
+      <workItem from="1561401518148" duration="3781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22611000" />
+    <option name="totallyTimeSpent" value="26755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="960" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4973822" visible="true" weight="0.24920128" />
-      <window_info id="Structure" order="1" sideWeight="0.5026178" side_tool="true" visible="true" weight="0.24920128" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4947644" visible="true" weight="0.25346112" />
+      <window_info id="Structure" order="1" sideWeight="0.5052356" side_tool="true" weight="0.24920128" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -170,17 +217,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/image.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="155" column="69" selection-start-line="155" selection-start-column="69" selection-end-line="155" selection-end-column="69" />
+        <state relative-caret-position="277">
+          <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
           <folding>
-            <element signature="e#254#406#0" />
             <element signature="e#479#498#0" />
             <element signature="e#1119#1216#0" />
-            <element signature="e#1281#1901#0" />
-            <element signature="e#1972#3423#0" />
-            <element signature="e#3495#3785#0" />
+            <element signature="e#3495#3877#0" />
+            <element signature="e#3960#4392#0" />
           </folding>
         </state>
       </provider>

@@ -4,6 +4,10 @@ const uuidv4 = require('uuid/v4');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
 const knex = require('knex');
+const register = require('./controllers/register');
+const login = require('./controllers/login');
+const profile = require('./controllers/profile');
+const image = require('./controllers/image');
 const saltRounds = 10;
 
 const database = knex({
@@ -54,106 +58,22 @@ app.get('/', (req, res) => {
 
 // ####### LOGIN ##########
 app.post('/login', (req, res) => {
-    database('login')
-        .select('email', 'hash')
-        .where('email', req.body.email)
-        .then(loginUser => {
-            if (bcrypt.compareSync(req.body.password,loginUser[0].hash)) {
-                return database('users')
-                    .select('*')
-                    .where('email', loginUser[0].email)
-                    .then(user => res.json(user[0]))
-                    .catch(error => res.json("error logging in"))
-            } else {
-                res.status(400).json('Incorrect credentials');
-            }
-        })
-        .catch(error => res.json('Incorrect credentials'));
+    login.handleLogin(req, res, database, bcrypt);
 });
 
 // ####### REGISTER ##########
 app.post('/register', (req, res) => {
-    const {name, email, password} = req.body;
-
-    // convert password to hash
-    const salt = bcrypt.genSaltSync(saltRounds);
-    const hash = bcrypt.hashSync(password, salt);
-
-    // insert into login and users using transaction
-    database.transaction(trx => {
-        trx('login')
-            .insert({
-                email: email,
-                hash: hash
-            })
-            .returning('email')
-            .then(loginEmail => {
-                return trx('users')
-                    .returning('*')
-                    .insert({
-                        name: name,
-                        email: loginEmail[0],
-                        joined: new Date()
-                    })
-                    .then(user => res.json(user[0]))
-            })
-            .then(trx.commit)
-            .catch(trx.rollback);
-    }).catch(error => res.status(400).json('Error registering user'));
-
-    // database.users.push({
-    //     id: uuidv4(),
-    //     name: req.body.name,
-    //     email: req.body.email,
-    //     password: req.body.password,
-    //     entries: 0,
-    //     joined: new Date()
-    // });
-    // const registeredUser = database.users[database.users.length-1];
-    // const user = {
-    //     id: registeredUser.id,
-    //     name: registeredUser.name,
-    //     email: registeredUser.email,
-    //     entries: registeredUser.entries,
-    //     joined: registeredUser.joined
-    // };
-    // res.send(user);
+    register.handleRegister(req, res, database, bcrypt)
 });
 
 // ####### PROFILE ##########
 app.get('/profile/:id', (req, res) => {
-    const { id } = req.params;
-
-    return database('users')
-        .select('*')
-        .where('id', id)
-        .then(user => {
-            if (user.length > 0) {
-                res.json(user[0]);
-            } else {
-                res.status(400).json('Could not find user.')
-            }
-
-        })
-        .catch(error => res.status(404).json('could not find user'));
+    profile.handleProfileGet(req, res, database);
 });
 
 // ####### IMAGE: INCREMENT ENTRIES ##########
 app.put('/image', (req, res) => {
-    const {id} = req.body;
-
-    return database('users')
-        .where('id', '=', id)
-        .returning('entries')
-        .increment('entries', 1)
-        .then(entries => {
-            if (entries.length > 0) {
-                res.json(entries[0]);
-            } else {
-                res.status(400).json("couldn't find user");
-            }
-        })
-        .catch(error => res.status(400).json('could not find user'));
+    image.handleImage(req, res, database);
 });
 
 app.listen(3000, () => {
