@@ -6,6 +6,7 @@ const cors = require('cors');
 const knex = require('knex');
 const register = require('./controllers/register');
 const login = require('./controllers/login');
+const profile = require('./controllers/profile');
 const saltRounds = 10;
 
 const database = knex({
@@ -64,20 +65,7 @@ app.post('/register', (req, res) => {register.handleRegister(req, res, database,
 
 // ####### PROFILE ##########
 app.get('/profile/:id', (req, res) => {
-    const { id } = req.params;
-
-    return database('users')
-        .select('*')
-        .where('id', id)
-        .then(user => {
-            if (user.length > 0) {
-                res.json(user[0]);
-            } else {
-                res.status(400).json('Could not find user.')
-            }
-
-        })
-        .catch(error => res.status(404).json('could not find user'));
+    profile.handleProfileGet(req, res, database);
 });
 
 // ####### IMAGE: INCREMENT ENTRIES ##########
