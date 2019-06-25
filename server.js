@@ -24,31 +24,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// let database = {
-//     users: [{
-//         id: '123',
-//         name: 'John',
-//         email: 'john@gmail.com',
-//         password: 'cookies',
-//         entries: 0,
-//         joined: new Date()
-//     }, {
-//         id: '124',
-//         name: 'Sally',
-//         email: 'sally@gmail.com',
-//         password: 'bananas',
-//         entries: 0,
-//         joined: new Date()
-//     }, {
-//         id: '125',
-//         name: 'Antonio',
-//         email: 'antonio@me.com',
-//         password: 'pelota',
-//         entries: 0,
-//         joined: new Date()
-//     }]
-// };
-
 // ####### ROOT ##########
 app.get('/', (req, res) => {
     return database.select("*")
