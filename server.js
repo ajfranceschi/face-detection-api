@@ -26,10 +26,11 @@ app.use(cors());
 
 // ####### ROOT ##########
 app.get('/', (req, res) => {
-    return database.select("*")
-        .from('users')
-        .orderBy('id', 'asc')
-        .then(data => res.json(data));
+    res.send("It's working");
+    // return database.select("*")
+    //     .from('users')
+    //     .orderBy('id', 'asc')
+    //     .then(data => res.json(data));
 });
 
 // ####### LOGIN ##########
