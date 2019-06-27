@@ -11,8 +11,11 @@ const image = require('./controllers/image');
 const saltRounds = 10;
 
 const database = knex({
-    client: process.env.DATABASE_URL,
-    ssl: true
+    client: 'pg',
+    connection: {
+        host: process.env.DATABASE_URL,
+        ssl: true
+    }
 });
 
 const app = express();
