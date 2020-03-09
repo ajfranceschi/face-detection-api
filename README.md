@@ -1,5 +1,4 @@
 # Face Detection API
---
 
 ![Face Detection API](/screenshot.png)
 --
