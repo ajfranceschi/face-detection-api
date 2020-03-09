@@ -7,7 +7,7 @@ Face Detection API is the back end of a Full Stack app in which, after your regi
 
 The front end code can be found [here](https://github.com/francofle/face-detection)
 
-### [Live Demo](https://smart-brain-kenobi.herokuapp.com/)
+### [Live Demo](https://face-detection-kenobi.herokuapp.com/)
 
 Technologies Used:
 --
