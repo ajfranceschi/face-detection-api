@@ -59,9 +59,3 @@ app.post('/imageurl', (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
     console.log(`Listening on port ${process.env.PORT}`);
 });
-
-// API DESIGN:
-// 1: Login ->X
-// 2: Register - POST => register user to DB and return registered user - X
-// 4: Profile -> get => return user profile for the provided id - X
-// 5: Image => PUT increase entries for the provided user - X
